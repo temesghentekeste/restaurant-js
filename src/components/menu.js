@@ -1,4 +1,4 @@
-const { menuItems } = require('../data');
+const { menuItems } = require('../data/data');
 
 export const getMenu = () => {
   const menu = document.createElement('nav');
@@ -8,7 +8,7 @@ export const getMenu = () => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.textContent = menu.charAt(0).toUpperCase() + menu.slice(1);
-    link.setAttribute('href', menu);
+    link.setAttribute('href', "" );
     li.appendChild(link);
     UIUlMenu.appendChild(li);
   });
