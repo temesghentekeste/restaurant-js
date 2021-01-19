@@ -1,4 +1,4 @@
-const menuItems = ['home', 'menu', 'about'];
+const menuItems = ['home', 'menu', 'contact'];
 
 export {
   menuItems,
