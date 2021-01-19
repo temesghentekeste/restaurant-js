@@ -1,0 +1,5 @@
+node_modules/
+public/
+js/test.js
+# Local Netlify folder
+.netlify
