@@ -27,12 +27,26 @@ const PageCtrl = (() => {
     UIMainContentDiv.append(footer);
   };
 
+  const setCurrentLink = linkText => {
+    let links = document.querySelectorAll('.menu-link');
+    links = Array.from(links);
+    links.forEach(link => {
+      link.classList.remove('current');
+    });
+
+    links.forEach((link) => {
+      if (link.textContent.toLowerCase() === linkText.toLowerCase()) {
+        link.classList.add('current');
+      }
+    });
+  };
+
   return {
     init() {
       addMenuItems();
       createContainer();
+      setCurrentLink('home');
       homePage();
-
       const UIMenuNav = document.querySelector('nav');
 
       const container = document.querySelector('#container');
@@ -45,12 +59,15 @@ const PageCtrl = (() => {
           switch (linkText) {
             case 'Home':
               homePage();
+              setCurrentLink('home');
               break;
             case 'Menu':
               menuPage();
+              setCurrentLink('menu');
               break;
             case 'Contact':
               contactPage();
+              setCurrentLink('contact');
               break;
             default:
               break;
@@ -59,6 +76,7 @@ const PageCtrl = (() => {
       });
       addFooter();
     },
+
   };
 })();
 
