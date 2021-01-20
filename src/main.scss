@@ -156,3 +156,42 @@ a:hover {
     }
   }
 }
+
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 480px;
+}
+
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card-flip {
+  perspective: 1000px;
+
+  &:hover .flip,
+  &.hover .flip {
+    transform: rotateY(180deg);
+  }
+}
