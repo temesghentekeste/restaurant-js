@@ -33,7 +33,7 @@ const contact = () => {
               </div>
               <button
                 type="submit"
-                class="btn-custom btn-block btn-custom-primary"
+                class="btn btn-primary btn-block"
               >
                 Submit
               </button>

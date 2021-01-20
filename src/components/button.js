@@ -4,7 +4,7 @@ export const getButton = (link, classArr, linkText) => {
     linkElement.classList.add(cls);
   });
   linkElement.textContent = linkText;
-  linkElement.setAttribute('href', link);
+  linkElement.setAttribute('href', '');
 
   return linkElement;
 };
