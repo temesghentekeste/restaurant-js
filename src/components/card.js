@@ -7,7 +7,7 @@ const getCard = ({
         <div class="front">
           <!-- front content -->
           <div class="card">
-            <img class="card-img-top" src="${img}" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+            <img class="card-img-top" src=${img} alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
             <div class="card-block">
               <h4 class="card-title">${name}</h4>
               <p class="card-text">${description}</p>
