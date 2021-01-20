@@ -195,3 +195,49 @@ a:hover {
     transform: rotateY(180deg);
   }
 }
+
+.contact {
+  margin: 5rem 0;
+  background:
+    linear-gradient(
+      105deg,
+      #383838 0%,
+      rgba(56, 56, 56, 0.95) 50%,
+      transparent 50%
+    ),
+    url('./assets/featured.jpg') no-repeat center center/cover;
+
+  input {
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #888;
+    border-radius: 0;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+
+    &:focus {
+      background: transparent;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #fff;
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
+
+  ::placeholder {
+    color: #ccc;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    background: linear-gradient(#383838, rgba(56, 56, 56, 0.95));
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+}
