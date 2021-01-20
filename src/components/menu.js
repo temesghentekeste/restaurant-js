@@ -8,7 +8,7 @@ export const getMenu = () => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.textContent = menu.charAt(0).toUpperCase() + menu.slice(1);
-    link.setAttribute('href', "" );
+    link.setAttribute('href', '');
     li.appendChild(link);
     UIUlMenu.appendChild(li);
   });
@@ -17,4 +17,4 @@ export const getMenu = () => {
   menu.appendChild(UIUlMenu);
 
   return menu;
-}
+};

@@ -42,8 +42,8 @@ export const getFooter = () => {
   `;
 
   const UIMainFooter = document.createElement('footer');
-  UIMainFooter.id = 'main-footer'
-  UIMainFooter.classList.add('py-2')
+  UIMainFooter.id = 'main-footer';
+  UIMainFooter.classList.add('py-2');
   UIMainFooter.innerHTML = html;
   return UIMainFooter;
 };

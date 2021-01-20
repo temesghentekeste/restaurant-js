@@ -1,16 +1,15 @@
 const contact = () => {
   const container = document.querySelector('#container');
 
-   const contactSection = document.createElement('section');
-   contactSection.classList.add('contact', 'p-5')
+  const contactSection = document.createElement('section');
+  contactSection.classList.add('contact', 'p-5');
 
-   const divRow = document.createElement('div');
-   divRow.classList.add('row');
-   contactSection.append(divRow);
+  const divRow = document.createElement('div');
+  divRow.classList.add('row');
+  contactSection.append(divRow);
 
-
-   const html = `
-          <div class=" pb-4 col-md-5 col-12">
+  const html = `
+          <div class=" pb-4 col-lg-5">
             <h3 class="section-title mb-5 text-white">Get In Touch</h3>
             <form action="#" class="contact-form">
               <div class="form-group py-4">
@@ -41,11 +40,8 @@ const contact = () => {
           </div>
    `;
 
-   divRow.innerHTML = html;
-   console.log(divRow);
+  divRow.innerHTML = html;
   container.append(contactSection);
-
-
 };
 
 export default contact;

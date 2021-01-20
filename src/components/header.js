@@ -1,5 +1,4 @@
 const { getButton } = require('./button');
-const menuPage = require('../menu');
 
 export const getHeader = () => {
   const UIHeader = document.createElement('header');
@@ -24,7 +23,7 @@ laudantium. Quam sapiente a dolorum magnam necessitatibus quis
 tempore facere totam. Dolor, sequi distinctio!`;
   UIShowcaseContentDiv.appendChild(UIShowcasePara);
 
-  const UIShowcaseOrderBtn = getButton('menu', ['btn-order','btn', 'btn-primary'], 'Order');
+  const UIShowcaseOrderBtn = getButton('menu', ['btn-order', 'btn', 'btn-primary'], 'Order');
   UIShowcaseContentDiv.appendChild(UIShowcaseOrderBtn);
 
   UIShowcaseContainerDiv.appendChild(UIShowcaseContentDiv);

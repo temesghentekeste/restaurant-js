@@ -1,5 +1,6 @@
-const { getHeader } = require('./components/header');
 import menuPage from './menu';
+
+const { getHeader } = require('./components/header');
 
 const home = () => {
   const container = document.querySelector('#container');

@@ -1,4 +1,3 @@
-/* Navigation */
 #main-nav {
   .social {
     display: none;
@@ -10,6 +9,12 @@
         padding: 0.5rem;
       }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    background: linear-gradient(#383838, rgba(56, 56, 56, 0.95));
   }
 }
 

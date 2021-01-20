@@ -1,4 +1,6 @@
 $primary: #f99500;
+$secondary: #c72727;
+
 :root {
   --primary-color: #c72727;
   --secondary-color: #f99500;
@@ -111,6 +113,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
+    padding-top: 2rem;
 
     & > *:last-child {
       background: #444;
@@ -230,12 +233,6 @@ a:hover {
 
   ::placeholder {
     color: #ccc;
-  }
-}
-
-@media (max-width: 992px) {
-  .contact {
-    background: linear-gradient(#383838, rgba(56, 56, 56, 0.95));
   }
 }
 

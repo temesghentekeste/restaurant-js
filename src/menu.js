@@ -1,8 +1,9 @@
 import { foodMenuItems } from './data/data';
 import getCard from './components/card';
+
 const menu = () => {
   const container = document.querySelector('#container');
-  
+
   const menuSection = document.createElement('section');
   const divContainer = document.createElement('div');
   divContainer.classList.add('container');
@@ -12,7 +13,6 @@ const menu = () => {
   divRow.classList.add('row');
   divContainer.append(divRow);
 
-  console.log(menuSection);
   let html = '';
 
   foodMenuItems.forEach((food) => {
