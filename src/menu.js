@@ -23,7 +23,7 @@ const menu = () => {
   container.append(menuSection);
 
   const h1 = document.createElement('h1');
-  h1.classList.add('my-5', 'container');
+  h1.classList.add('my-5', 'container', 'text-center');
   h1.textContent = 'Check Our Delicious Food';
   menuSection.prepend(h1);
 

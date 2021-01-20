@@ -1,6 +1,11 @@
 const contact = () => {
   const container = document.querySelector('#container');
 
+  const h1 = document.createElement('h1');
+  h1.classList.add('my-5', 'container', 'text-center');
+  h1.textContent = 'Contact Us';
+  container.prepend(h1);
+
   const contactSection = document.createElement('section');
   contactSection.classList.add('contact', 'p-5');
 
@@ -41,7 +46,12 @@ const contact = () => {
    `;
 
   divRow.innerHTML = html;
+
+  const emptyDiv = document.createElement('div');
+  emptyDiv.classList.add('mb-lg', 'container');
+
   container.append(contactSection);
+  container.append(emptyDiv);
 };
 
 export default contact;

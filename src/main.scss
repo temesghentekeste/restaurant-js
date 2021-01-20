@@ -45,6 +45,10 @@ h6 {
   line-height: 1.3;
 }
 
+.mb-lg {
+  margin-bottom: 8rem;
+}
+
 a:hover {
   text-decoration: none;
   color: var(--primary-color);
@@ -114,6 +118,7 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
     padding-top: 2rem;
+    margin-top: 4rem;
 
     & > *:last-child {
       background: #444;
