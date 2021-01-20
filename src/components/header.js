@@ -28,7 +28,7 @@ tempore facere totam. Dolor, sequi distinctio!`;
 
   UIShowcaseContainerDiv.appendChild(UIShowcaseContentDiv);
   UIContainerDiv.appendChild(UIShowcaseContainerDiv);
-  UIHeader.appendChild(UIContainerDiv);
+  UIHeader.append(UIContainerDiv);
 
 
   return UIHeader;

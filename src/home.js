@@ -1,15 +1,12 @@
 const { getHeader } = require('./components/header');
-const { getFooter } = require('./components/footer');
 const home = () => {
-  const UIMainContentDiv = document.querySelector('#content');
+  const container = document.querySelector('#container');
 
   // Adding Header
   const header = getHeader();
-  UIMainContentDiv.appendChild(header);
+  container.append(header);
 
   // Add Footer
-  const footer = getFooter();
-  UIMainContentDiv.appendChild(footer);
 };
 
 export default home;
