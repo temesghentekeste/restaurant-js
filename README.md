@@ -56,6 +56,7 @@ Restaurant JS is a JavaScript project that contains three simple pages: home pag
   - npm run build (This is the production mode)
 
 ## Prerequisites<a name = "prerequisites"></a>
+- npm
 - A modern up-to-date browser
 - Text Editor
 
