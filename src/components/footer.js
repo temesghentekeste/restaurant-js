@@ -36,7 +36,7 @@ const getFooter = () => {
             <a href="#" class="btn btn-secondary">Join Now</a>
           </div>
           <div>
-            <p>Copyright &copy; 2021, All Rights Reserved</p>
+            <p>Copyright &copy; 2021 Temesghen Tekeste, All Rights Reserved</p>
           </div>
         </div>
   `;

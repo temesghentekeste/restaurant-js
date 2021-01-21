@@ -1,5 +1,7 @@
 import menuPage from './menu';
 
+const setCurrentLink = require('../utilities/current_link');
+
 const getHeader = require('../components/header');
 
 const home = () => {
@@ -14,6 +16,7 @@ const home = () => {
     e.preventDefault();
     const container = document.querySelector('#container');
     container.innerHTML = '';
+    setCurrentLink.default('menu');
     menuPage();
   });
 };

@@ -6,6 +6,8 @@ import contactPage from './pages/contact';
 
 const getMenu = require('./components/menu');
 const getFooter = require('./components/footer');
+const setCurrentLink = require('./utilities/current_link');
+
 
 const PageCtrl = (() => {
   const createContainer = () => {
@@ -27,25 +29,12 @@ const PageCtrl = (() => {
     UIMainContentDiv.append(footer);
   };
 
-  const setCurrentLink = linkText => {
-    let links = document.querySelectorAll('.menu-link');
-    links = Array.from(links);
-    links.forEach(link => {
-      link.classList.remove('current');
-    });
-
-    links.forEach((link) => {
-      if (link.textContent.toLowerCase() === linkText.toLowerCase()) {
-        link.classList.add('current');
-      }
-    });
-  };
 
   return {
     init() {
       addMenuItems();
       createContainer();
-      setCurrentLink('home');
+      setCurrentLink.default('home');
       homePage();
       const UIMenuNav = document.querySelector('nav');
 
@@ -59,15 +48,15 @@ const PageCtrl = (() => {
           switch (linkText) {
             case 'Home':
               homePage();
-              setCurrentLink('home');
+              setCurrentLink.default('home');
               break;
             case 'Menu':
               menuPage();
-              setCurrentLink('menu');
+              setCurrentLink.default('menu');
               break;
             case 'Contact':
               contactPage();
-              setCurrentLink('contact');
+              setCurrentLink.default('contact');
               break;
             default:
               break;
