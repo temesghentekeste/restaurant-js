@@ -32,7 +32,7 @@ Restaurant JS is a JavaScript project that contains three simple pages: home pag
 
 ## Screenshots <a name = "screenshots"></a>
 
-![screenshot](./src/assets/screenshot.gif) 
+![screenshot](./src/assets/screenshot_desktop.gif) 
 
 ## 🔧 Built with<a name = "with"></a>
 
