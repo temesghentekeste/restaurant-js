@@ -1,12 +1,12 @@
 import menuPage from './menu';
 
-const { getHeader } = require('./components/header');
+const getHeader = require('../components/header');
 
 const home = () => {
   const container = document.querySelector('#container');
 
   // Adding Header
-  const header = getHeader();
+  const header = getHeader.default();
   container.append(header);
 
   const UIShowcaseOrderBtn = document.querySelector('.btn-order');

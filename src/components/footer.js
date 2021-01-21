@@ -1,4 +1,4 @@
-export const getFooter = () => {
+const getFooter = () => {
   const html = `
    
         <div class="container footer-container">
@@ -47,3 +47,5 @@ export const getFooter = () => {
   UIMainFooter.innerHTML = html;
   return UIMainFooter;
 };
+
+export default getFooter;

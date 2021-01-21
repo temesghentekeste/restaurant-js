@@ -1,4 +1,4 @@
-export const getButton = (link, classArr, linkText) => {
+const getButton = (link, classArr, linkText) => {
   const linkElement = document.createElement('a');
   classArr.forEach((cls) => {
     linkElement.classList.add(cls);
@@ -8,3 +8,5 @@ export const getButton = (link, classArr, linkText) => {
 
   return linkElement;
 };
+
+export default getButton;

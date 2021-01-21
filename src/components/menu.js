@@ -1,6 +1,6 @@
 const { menuItems } = require('../data/data');
 
-export const getMenu = () => {
+const getMenu = () => {
   const menu = document.createElement('nav');
   const UIUlMenu = document.createElement('ul');
 
@@ -19,3 +19,5 @@ export const getMenu = () => {
 
   return menu;
 };
+
+export default getMenu;

@@ -9,7 +9,7 @@ const common = require('./webpack.common');
 module.exports = merge(common, {
   mode: 'production',
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/template.html',
@@ -21,7 +21,7 @@ module.exports = merge(common, {
     }),
   ],
   output: {
-    filename: '[name].[contenthash].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

@@ -1,11 +1,11 @@
 import './main.scss';
 import './mobile.scss';
-import homePage from './home';
-import menuPage from './menu';
-import contactPage from './contact';
+import homePage from './pages/home';
+import menuPage from './pages/menu';
+import contactPage from './pages/contact';
 
-const { getMenu } = require('./components/menu');
-const { getFooter } = require('./components/footer');
+const getMenu = require('./components/menu');
+const getFooter = require('./components/footer');
 
 const PageCtrl = (() => {
   const createContainer = () => {
@@ -16,13 +16,13 @@ const PageCtrl = (() => {
     contentDiv.append(container);
   };
   const addMenuItems = () => {
-    const menu = getMenu();
+    const menu = getMenu.default();
     const UIMainContentDiv = document.querySelector('#content');
     UIMainContentDiv.prepend(menu);
   };
 
   const addFooter = () => {
-    const footer = getFooter();
+    const footer = getFooter.default();
     const UIMainContentDiv = document.querySelector('#content');
     UIMainContentDiv.append(footer);
   };

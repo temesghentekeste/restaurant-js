@@ -1,5 +1,5 @@
-import { foodMenuItems } from './data/data';
-import getCard from './components/card';
+import { foodMenuItems } from '../data/data';
+import getCard from '../components/card';
 
 const menu = () => {
   const container = document.querySelector('#container');
