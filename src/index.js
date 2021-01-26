@@ -8,7 +8,6 @@ const getMenu = require('./components/menu');
 const getFooter = require('./components/footer');
 const setCurrentLink = require('./utilities/current_link');
 
-
 const PageCtrl = (() => {
   const createContainer = () => {
     const contentDiv = document.querySelector('#content');
@@ -29,13 +28,28 @@ const PageCtrl = (() => {
     UIMainContentDiv.append(footer);
   };
 
+  const getCurrentRestaurantMenu = () => {
+    const currentRestaurantMenu = localStorage.getItem('currentRestaurantMenu')
+      ? localStorage.getItem('currentRestaurantMenu')
+      : 'home';
+    return currentRestaurantMenu;
+  };
 
   return {
     init() {
       addMenuItems();
       createContainer();
-      setCurrentLink.default('home');
-      homePage();
+      const currentStoredMenu = getCurrentRestaurantMenu();
+      setCurrentLink.default(currentStoredMenu);
+      if (currentStoredMenu === 'menu') {
+        menuPage();
+      } else if (currentStoredMenu === 'contact') {
+        contactPage();
+      } else {
+        setCurrentLink.default('home');
+        homePage();
+      }
+
       const UIMenuNav = document.querySelector('nav');
 
       const container = document.querySelector('#container');
@@ -65,7 +79,6 @@ const PageCtrl = (() => {
       });
       addFooter();
     },
-
   };
 })();
 
